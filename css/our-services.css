@@ -1,0 +1,31 @@
+.our-services {
+  background-color: var(--second-color);
+}
+
+.service {
+  text-align: center;
+}
+
+.service-text {
+  color: var(--second-white-color);
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.font-service--text {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.services-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.service-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 85%;
+}

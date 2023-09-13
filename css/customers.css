@@ -1,0 +1,41 @@
+.customers {
+  max-width: 100%;
+  max-height: 100%;
+  background-image: url('../images/ferrari-spider.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(1, 17, 38, 0.5);
+}
+
+.customers-overlay {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.customers-container--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  color: var(--second-white-color);
+  padding: 2rem .5rem;
+  padding-bottom: 4rem;
+}
+
+.customer-number {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.customer-text {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.ion-icon {
+  font-size: 2.5rem;
+  color: var(--first-color);
+}

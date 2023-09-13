@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <link rel="stylesheet" href="css/about-us.css" />
+  <link rel="stylesheet" href="css/buttons.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/contact-us.css" />
+  <link rel="stylesheet" href="css/customers.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/horizontal-line.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/our-services.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <link rel="stylesheet" href="css/pricing.css" />
+  <link rel="stylesheet" href="css/spinner.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/testimonials.css" />
+  <link rel="stylesheet" href="css/utilities.css" />
+  <title></title>
+</head>
+
+<body data-dark>
+  <!-- Header Section -->
+  <header class="header" data-dark>
+    <section class="container">
+      <div class="logo">
+        <img src="images/gonzalez.png" class="logo-img" alt="González Paint Workshop">
+      </div>
+      <button class="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+        </svg>
+        <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+        </svg>
+      </button>
+      <nav class="menu" data-dark>
+        <a href="#inicio">Home</a>
+        <a href="#acerca">About</a>
+        <a href="#acerca">About</a>
+        <a href="#acerca">About</a>
+        <a href="#acerca">About</a>
+      </nav>
+    </section>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-image">
+    <div class="hero-image-opacity">
+      <div class="hero-overlay">
+        <p class="hero-gonzalez">gonzález car paint</p>
+        <h1 class="hero-text">Take your car's paint to the next level</h1>
+        <p class="hero-p">In a world of constant innovation, the pursuit of creative
+          solutions becomes a need. In this context, González Car Paint stands out as a leader in automotive aesthetics
+          transformation.</p>
+        <a href="#" class="btn btn-hero">Discover more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="cards">
+    <div class="card-container">
+      <div class="card-1 card">
+        <ion-icon name="cash-outline" class="card-icon"></ion-icon>
+        <p>Best Prizes</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aperiam consequuntur.!</p>
+      </div>
+      <div class="card-2 card">
+        <ion-icon name="construct-outline" class="card-icon"></ion-icon>
+        <p>Best equipment</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aperiam consequuntur.!</p>
+      </div>
+      <div class="card-3 card medium-margin--bottom ">
+        <ion-icon name="beaker-outline" class="card-icon"></ion-icon>
+        <p>Excellent materials</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aperiam consequuntur.!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-us">
+    <div class="flex-container">
+      <div class="container-left">
+        <div class="section-title about">
+          <h2>About Us</h2>
+        </div>
+        <div class="about-text">
+          We are the best vehicule paint since 2020
+        </div>
+        <div class="about-text--2">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum perferendis suscipit magni consectetur unde
+          eum ipsam qui incidunt iure temporibus assumenda.
+        </div>
+
+        <ul class="text-u--list">
+          <li class="text-list">
+            <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Best color quality</p>
+          </li>
+          <li class="text-list">
+            <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Best Prices</p>
+          </li>
+          <li class="text-list">
+            <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Official guarantee</p>
+          </li>
+          <li class="text-list">
+            <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Quality and Service</p>
+          </li>
+          <li class="text-list">
+            <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Best materials</p>
+          </li>
+        </ul>
+
+        <a href="#" class="btn about-btn">More About Us</a>
+      </div>
+      <div class="container-right">
+        <div class="container-img">
+          <img src="images/paint.jpg" class="container-img--experience" alt="Experience">
+          <div class="carrousel-container">
+            <div class="carrousel">
+              <div class="carousel-track">
+                <img src="images/range.jpg" class="carrousel-img" alt="Experience">
+                <img src="images/mustang.jpg" class="carrousel-img" alt="Experience">
+                <img src="images/mercedes.jpg" class="carrousel-img" alt="Experience">
+              </div>
+            </div>
+            <div class="dots">
+              <button class="dot dot--fill" onclick="goToSlide(0)">&nbsp;</button>
+              <button class="dot" onclick="goToSlide(1)">&nbsp;</button>
+              <button class="dot" onclick="goToSlide(2)">&nbsp;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customers Section -->
+  <section class="customers">
+    <div class="customers-overlay">
+      <div class="customers-container--grid">
+        <div class="element medium-margin--top">
+          <span><ion-icon name="people-outline" class="ion-icon"></ion-icon></span>
+          <p class="customer-number">125 <span class="first-color">+</span></p>
+          <p class="customer-text">Customer Happy</p>
+        </div>
+        <div class="element medium-margin--top">
+          <span><ion-icon name="rocket-outline" class="ion-icon"></ion-icon></span>
+          <p class="customer-number">125 <span class="first-color">+</span></p>
+          <p class="customer-text">Projects Done</p>
+        </div>
+        <div class="element">
+          <span><ion-icon name="ribbon-outline" class="ion-icon"></ion-icon></span>
+          <p class="customer-number">125 <span class="first-color">+</span></p>
+          <p class="customer-text">Service Guarantee</p>
+        </div>
+        <div class="element">
+          <span><ion-icon name="people-outline" class="ion-icon"></ion-icon></span>
+          <p class="customer-number">125 <span class="first-color">+</span></p>
+          <p class="customer-text">Team Experts</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our services Section -->
+  <section class="our-services">
+    <div class="section-title service">
+      <h2>Our Services</h2>
+    </div>
+
+    <p class="service-text font-service--text">WE ARE QUALIFIED & PROFESSIONAL</p>
+    <p class="service-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum, cum in expedita fugiat labore, nisi,
+      pariatur eos dolorum blanditiis vero temporibus illo debitis accusamus explicabo? Repellat officia at adipisci?
+    </p>
+
+    <div class="services-card">
+      <img src="images/range.jpg" class="service-img" alt="Experience">
+      <img src="images/mustang.jpg" class="service-img" alt="Experience">
+      <img src="images/mercedes.jpg" class="service-img" alt="Experience">
+    </div>
+
+    <a href="#" class="btn service-btn">View all service</a>
+  </section>
+
+  <!-- Line Section -->
+  <section class="horizontal-line">
+    <p class="text-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid assumenda dolorum error.</p>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonials">
+    <div class="section-title testimonial">
+      <h2>Testimonials</h2>
+    </div>
+
+    <p class="testimonial-text font-testimonial--text">Customer reviews</p>
+    <p class="testimonial-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum, cum in expedita fugiat labore, nisi,
+      pariatur eos dolorum blanditiis vero temporibus illo debitis accusamus explicabo? Repellat officia at adipisci?
+    </p>
+
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <div class="flex-container-row">
+          <img src="images/customer.jpg" class="customer-img" alt="Customer testimonial">
+          <p>Jeannie Fenix</p>
+        </div>
+        <div class="customer-review">
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda harum perferendis!</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="flex-container-row">
+          <img src="images/customer.jpg" class="customer-img" alt="Customer testimonial">
+          <p>Jeannie Fenix</p>
+        </div>
+        <div class="customer-review">
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda harum perferendis!</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="flex-container-row">
+          <img src="images/customer.jpg" class="customer-img" alt="Customer testimonial">
+          <p>Jeannie Fenix</p>
+        </div>
+        <div class="customer-review">
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda harum perferendis!</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="flex-container-row">
+          <img src="images/customer.jpg" class="customer-img" alt="Customer testimonial">
+          <p>Jeannie Fenix</p>
+        </div>
+        <div class="customer-review">
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda harum perferendis!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="price">
+    <div class="section-title pricing">
+      <h2 class="tittle-price">Pricing plan</h2>
+    </div>
+
+    <p class="pricing-text font-pricing--text">Best services price</p>
+    <p class="pricing-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum, cum in expedita fugiat labore, nisi,
+      pariatur eos dolorum blanditiis vero temporibus illo debitis accusamus explicabo? Repellat officia at adipisci?
+    </p>
+
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <h3 class="tittle-card">Car Painting</h3>
+        <p class="price-card">$800</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Best Paint</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Body Repair</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Frame Repair</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Detailling</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Warranty</p>
+        <a href="#" class="btn btn-pricing">Get in touch</a>
+      </div>
+      <div class="pricing-card">
+        <h3 class="tittle-card">Car Painting</h3>
+        <p class="price-card">$800</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Best Paint</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Body Repair</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Frame Repair</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Detailling</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Warranty</p>
+        <a href="#" class="btn btn-pricing">Get in touch</a>
+
+      </div>
+      <div class="pricing-card">
+        <h3>Car Painting</h3>
+        <p class="price-card">$800</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Best Paint</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Body Repair</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Frame Repair</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Detailling</p>
+        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Warranty</p>
+        <a href="#" class="btn btn-pricing">Get in touch</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact-us">
+    <div class="section-title contact">
+      <h2 class="tittle-contact">Contact Us</h2>
+    </div>
+  </section>
+
+  <div class="container-form">
+    <form id="form" class="form">
+      <h3 class="write-us">Write to Us</h3>
+
+      <!-- Email -->
+      <div class="label-form">
+        <label for="email" class="label-text"> Email:</label>
+        <input id="email" type="email" name="email" class="email-input space input-text"
+          placeholder="Enter your email valid address">
+      </div>
+
+      <!-- Subject -->
+      <div class="label-form">
+        <label for="subject" class="label-text"> Subject:</label>
+        <input id="subject" type="text" name="subject" class="subject-input space input-text" placeholder="Subject">
+      </div>
+
+      <!-- Message -->
+      <div class="label-form">
+        <label for="message" class="label-text">Message:</label>
+        <textarea id="message" type="text" name="message" class="mensaje-text--area space input-text"
+          placeholder="Write your message here"></textarea>
+      </div>
+
+      <div class="form-btns" id="form-btns">
+        <button class="btn-form send opacity" type="submit" disabled>Send</button>
+        <button class="btn-form resetbtn" type="reset">Reset</button>
+      </div>
+      <!-- botones -->
+      <div id="spinner" class="spinner spinner-flex">
+        <div class="sk-chase">
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/gonzalez.png" alt="Gonzalez">
+        </div>
+        <div class="footer-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cumque et autem cupiditate odit iusto</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Quick links</p>
+        <ul class="footer-list">
+          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
+              href="#">&nbsp; Hola</a></li>
+          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
+              href="#">&nbsp; Hola</a></li>
+          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
+              href="#">&nbsp; Hola</a></li>
+          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
+              href="#">&nbsp; Hola</a></li>
+          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
+              href="#">&nbsp; Hola</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Support</p>
+        <ul class="footer-list">
+          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
+              href="#">&nbsp;
+              Hola</a></li>
+          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
+              href="#">&nbsp;
+              Hola</a></li>
+          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
+              href="#">&nbsp;
+              Hola</a></li>
+          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
+              href="#">&nbsp;
+              Hola</a></li>
+          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
+              href="#">&nbsp;
+              Hola</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Information</p>
+        <span class="footer-flex">
+          <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+          <p class="footer-text">&nbsp +506 873751114</p>
+        </span>
+        <span class="footer-flex">
+          <ion-icon name="mail-outline" class="footer-icon"></ion-icon>
+          <p class="footer-text">&nbsp andresdev@proton.me</p>
+        </span>
+        <span class="footer-flex"><ion-icon name="location-outline" class="footer-icon"></ion-icon>
+          <p class="footer-text">&nbsp Alajuela, Costa Rica</p>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    <hr class="footer-line">
+    <p class="copyright-text">Copyright © Gonzalez <span class="copy-date">2021</span>. All Rights Reserved.</p>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/ebacda2449.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

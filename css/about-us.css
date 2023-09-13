@@ -1,0 +1,92 @@
+.about-us {
+  background-color: var(--second-color);
+  margin-bottom: 0em;
+  color: var(--second-white-color);
+  margin-top: -4rem;
+}
+
+.about-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-text--2 {
+  line-height: 1.5;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.text-list {
+  margin-left: -.5rem;
+  list-style: none;
+  margin-bottom: -.5rem;
+}
+
+.check {
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+.container-img {
+  padding: 0 1rem;
+}
+
+.container-img--experience {
+  max-width: 100%;
+  margin-top: 4rem;
+}
+
+.carousel-container {
+  max-width: 100%;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.carrousel {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-img {
+  flex: 0 0 100%;
+  /* Ocupa el 100% del ancho del contenedor */
+  max-height: auto;
+  /* Ajusta la altura automáticamente */
+  object-fit: cover;
+}
+
+.dots {
+  position: relative;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.dot {
+  max-height: 1.5rem;
+  max-width: 1.2rem;
+  background-color: #fff;
+  border: 2px solid var(--first-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: var(--first-color);
+}

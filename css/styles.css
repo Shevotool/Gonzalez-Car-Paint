@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Space+Mono:wght@700&display=swap');
+
+/* ******** Custom Properties ******** */
+:root {
+  --dark-color: #222;
+  --first-color: #F2CB07;
+  /* Letras y botones */
+  --first-alpha-color: #e53170;
+  --second-color: #011126;
+  /* Cabecera */
+  --white-color: #fff;
+  --second-white-color: #F4F4F4;
+  --gray-light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --dark-gray-color: #666;
+  --black-color: #000;
+  --link-color: #509ee3;
+  --title-color: #333;
+  --text-color: #222;
+  --font: "Raleway", sans-serif;
+  --max-width: 1200px;
+  --header-height: 4rem;
+  --hero-image: "images/paint.jpg";
+  --hero-opacity-color: rgba(0, 0, 0, 0.5);
+  --testimonial-card: #D5D5D5;
+}
+
+/* ******** Reset ******** */
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text-color);
+  background-color: var(--second-color);
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /*   border-radius: 25px; */
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ******** Site Styles ******** */
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  padding: 1rem;
+  width: 100%;
+  height: calc(var(--header-height) + 0.5rem);
+  background-color: var(--second-color);
+}
+
+.header>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

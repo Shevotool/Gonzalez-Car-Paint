@@ -1,0 +1,98 @@
+/* ******** Utilities ******** */
+
+.bg-gray-light {
+  background-color: var(--gray-light-color);
+}
+
+.box-shadow-1 {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+}
+
+.gray-scale {
+  filter: grayscale(1);
+}
+
+.none {
+  display: none;
+}
+
+.section {
+  padding: 2rem 1rem;
+}
+
+.section-title {
+  border-top: thin solid var(--first-color);
+  border-bottom: thin solid var(--first-color);
+  font-size: 1.6rem;
+  margin: 2rem 2rem;
+  padding: 0.5rem 1rem;
+  color: var(--second-white-color);
+  text-align: center;
+}
+
+.about {
+  max-width: 45%;
+}
+
+.service,
+.about,
+.testimonial,
+.pricing {
+  margin: 5rem auto 2rem auto;
+  max-width: 60%;
+}
+
+.contact-us {
+  margin: 5rem auto 2rem auto;
+  max-width: 65%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.small-margin--top {
+  margin-top: 2.5rem;
+}
+
+.small-margin--bottom {
+  margin-bottom: 2.5rem;
+}
+
+.medium-margin--top {
+  margin-top: 5rem;
+}
+
+.medium-margin--bottom {
+  margin-bottom: 5rem;
+}
+
+.first-color {
+  color: var(--first-color);
+}
