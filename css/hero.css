@@ -1,6 +1,5 @@
 /* ******** HeroImage ******** */
 .hero-image {
-  position: relative;
   width: 100%;
   min-height: 100vh;
   background-image: url('../images/paint2.jpg');
@@ -9,6 +8,7 @@
   background-position: center;
   overflow: hidden;
   z-index: -1;
+  /* animation: imageTransition 22s infinite; */
 }
 
 .hero-image-opacity {
@@ -21,6 +21,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
 }
 
 .hero-image-opacity::before {
@@ -29,7 +30,7 @@
   top: 0;
   left: 0;
   background-color: rgba(1, 17, 38, 0.5);
-  /*  animation: imageTransition 22s infinite; */
+
 }
 
 .hero-overlay {
