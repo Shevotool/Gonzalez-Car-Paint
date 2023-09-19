@@ -34,9 +34,9 @@
   display: none;
 }
 
-.section {
+/* .section {
   padding: 2rem 1rem;
-}
+} */
 
 .section-title {
   border-top: thin solid var(--first-color);

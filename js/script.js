@@ -1,4 +1,6 @@
-/* ******** Menu ******** */
+///////////////////////////////////////////////////////////
+// Menu
+
 ((document) => {
   const $btnMenu = document.querySelector(".menu-btn"),
     $menu = document.querySelector(".menu");
@@ -18,7 +20,9 @@
   });
 })(document);
 
-/* ******** Carrousel******** */
+///////////////////////////////////////////////////////////
+// Carrousel
+
 let currentSlide = 0;
 const carouselTrack = document.querySelector(".carousel-track");
 const dots = document.querySelectorAll(".dot");
@@ -65,10 +69,14 @@ function keyboard() {
 
 keyboard();
 
-/* ******** Text line******** */
+///////////////////////////////////////////////////////////
+// Text line
+
 const textLine = document.querySelector(".text-line");
 
-/* ******** Form******** */
+///////////////////////////////////////////////////////////
+// Form
+
 document.addEventListener("DOMContentLoaded", function () {
   // Object to store form input values
   const email = {
@@ -199,7 +207,60 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-/* ******** Copy date ******** */
+///////////////////////////////////////////////////////////
+// Copy Date
+
 const copyDate = document.querySelector(".copy-date");
 const currentYear = new Date().getFullYear();
 copyDate.textContent = currentYear;
+
+///////////////////////////////////////////////////////////
+// Reveal Sections
+
+const allSections = document.querySelectorAll(".section");
+
+// Variables para el contador y el estado de visibilidad
+let isCustomerSectionVisible = false;
+let doneCounter = 0;
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("section-hidden");
+
+  // Verify if "Customers" section became visible
+  if (entry.target.classList.contains("customers")) {
+    isCustomerSectionVisible = true;
+
+    // Starts the iteration if "Customers" section is visible
+    iterateProyectsDone();
+  }
+};
+
+function iterateProyectsDone() {
+  const proyectsDone = document.querySelector(".proyects-done");
+  const iterator = 25;
+
+  if (proyectsDone && doneCounter <= iterator) {
+    setTimeout(() => {
+      proyectsDone.textContent = doneCounter;
+      doneCounter++;
+
+      // Continue the iteration
+      iterateProyectsDone();
+    }, 100);
+  }
+}
+
+const THRESHOLD = 0.15;
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: THRESHOLD,
+});
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section-hidden");
+});
