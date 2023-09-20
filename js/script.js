@@ -219,9 +219,12 @@ copyDate.textContent = currentYear;
 
 const allSections = document.querySelectorAll(".section");
 
-// Variables para el contador y el estado de visibilidad
+// Variables for counter and visibility status
 let isCustomerSectionVisible = false;
-let doneCounter = 0;
+let proyectsDoneCounter = 0;
+let customersDoneCounter = 0;
+let serviceDoneCounter = 0;
+let teamDoneCounter = 0;
 
 const revealSection = function (entries, observer) {
   const [entry] = entries;
@@ -236,20 +239,64 @@ const revealSection = function (entries, observer) {
 
     // Starts the iteration if "Customers" section is visible
     iterateProyectsDone();
+    iterateCustomersHappy();
+    iterateServiceGuarantee();
+    iterateTeamExperts();
   }
 };
 
 function iterateProyectsDone() {
   const proyectsDone = document.querySelector(".proyects-done");
-  const iterator = 25;
+  const proyectsIterator = 25;
 
-  if (proyectsDone && doneCounter <= iterator) {
+  if (proyectsDone && proyectsDoneCounter <= proyectsIterator) {
     setTimeout(() => {
-      proyectsDone.textContent = doneCounter;
-      doneCounter++;
-
+      proyectsDone.textContent = proyectsDoneCounter;
+      proyectsDoneCounter++;
       // Continue the iteration
       iterateProyectsDone();
+    }, 100);
+  }
+}
+
+function iterateCustomersHappy() {
+  const customersHappy = document.querySelector(".customers-happy");
+  const customersIterator = 40;
+
+  if (customersHappy && customersDoneCounter <= customersIterator) {
+    setTimeout(() => {
+      customersHappy.textContent = customersDoneCounter;
+      customersDoneCounter++;
+      // Continue the iteration
+      iterateCustomersHappy();
+    }, 100);
+  }
+}
+
+function iterateServiceGuarantee() {
+  const serviceGuarantee = document.querySelector(".service-guarantee");
+  const serviceIterator = 6;
+
+  if (serviceGuarantee && serviceDoneCounter <= serviceIterator) {
+    setTimeout(() => {
+      serviceGuarantee.textContent = serviceDoneCounter;
+      serviceDoneCounter++;
+      // Continue the iteration
+      iterateServiceGuarantee();
+    }, 100);
+  }
+}
+
+function iterateTeamExperts() {
+  const teamExperts = document.querySelector(".team-experts");
+  const teamIterator = 10;
+
+  if (teamExperts && teamDoneCounter <= teamIterator) {
+    setTimeout(() => {
+      teamExperts.textContent = teamDoneCounter;
+      teamDoneCounter++;
+      // Continue the iteration
+      iterateTeamExperts();
     }, 100);
   }
 }
