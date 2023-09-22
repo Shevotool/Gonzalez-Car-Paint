@@ -311,3 +311,34 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section-hidden");
 });
+
+///////////////////////////////////////////////////////////
+// Translator
+
+document.addEventListener("DOMContentLoaded", function () {
+  let translatorButton = document.querySelector(".translator");
+  const translateElements = document.querySelectorAll(".translate");
+  let currentLang = "en";
+
+  function toggleLanguage() {
+    currentLang = currentLang === "en" ? "es" : "en";
+
+    const currentTextButton = translatorButton.textContent.trim();
+    const newText = currentTextButton === "Es" ? "En" : "Es";
+
+    translatorButton.textContent = newText;
+
+    fetch("translations.json")
+      .then((response) => response.json())
+      .then((translations) => {
+        translateElements.forEach((element) => {
+          const key = element.getAttribute("data-translate");
+          if (translations[currentLang] && translations[currentLang][key]) {
+            element.textContent = translations[currentLang][key];
+          }
+        });
+      });
+  }
+
+  translatorButton.addEventListener("click", toggleLanguage);
+});

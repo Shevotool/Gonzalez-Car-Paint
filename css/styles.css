@@ -120,3 +120,10 @@ p {
   opacity: 0;
   transform: translateY(8rem);
 }
+
+.translator {
+  position: absolute;
+  right: 5rem;
+  font-size: 1rem;
+  color: var(--gray-light-color);
+}
