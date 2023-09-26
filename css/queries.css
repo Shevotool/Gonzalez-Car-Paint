@@ -91,6 +91,46 @@
   .services .section-title {
     grid-column: span 1;
   }
+}
 
+@media (max-width: 280px) {
+  .hero-image {
+    height: 120svh;
+  }
 
+  .hero-image-opacity {
+    height: 120svh;
+  }
+
+  .hero-overlay {
+    height: 120svh;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 420px) {
+  .hero-image {
+    height: 80svh;
+  }
+
+  .hero-image-opacity {
+    height: 80svh;
+  }
+
+  .hero-overlay {
+    height: 80svh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+  .hero-image {
+    height: 70svh;
+  }
+
+  .hero-image-opacity {
+    height: 70svh;
+  }
+
+  .hero-overlay {
+    height: 70svh;
+  }
 }

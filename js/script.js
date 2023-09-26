@@ -320,24 +320,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const translateElements = document.querySelectorAll(".translate");
   let currentLang = "en";
 
-  function toggleLanguage() {
-    currentLang = currentLang === "en" ? "es" : "en";
+  async function toggleLanguage() {
+    try {
+      currentLang = currentLang === "en" ? "es" : "en";
 
-    const currentTextButton = translatorButton.textContent.trim();
-    const newText = currentTextButton === "Es" ? "En" : "Es";
+      const currentTextButton = translatorButton.textContent.trim();
+      const newText = currentTextButton === "Es" ? "En" : "Es";
+      translatorButton.textContent = newText;
 
-    translatorButton.textContent = newText;
+      const response = await fetch("translations.json");
+      const translations = await response.json();
 
-    fetch("translations.json")
-      .then((response) => response.json())
-      .then((translations) => {
-        translateElements.forEach((element) => {
-          const key = element.getAttribute("data-translate");
-          if (translations[currentLang] && translations[currentLang][key]) {
-            element.textContent = translations[currentLang][key];
-          }
-        });
+      translateElements.forEach(function (element) {
+        const key = element.getAttribute("data-translate");
+        if (translations[currentLang] && translations[currentLang][key]) {
+          element.textContent = translations[currentLang][key];
+        }
       });
+    } catch (error) {
+      console.error("Error:", error.message);
+    }
   }
 
   translatorButton.addEventListener("click", toggleLanguage);
