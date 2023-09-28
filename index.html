@@ -102,52 +102,56 @@
   <section class="about-us section" id="about">
     <div class="flex-container">
       <div class="container-left">
-        <div class="section-title about">
-          <h2>About Us</h2>
-        </div>
-        <div class="about-text">
-          We are the best vehicule paint since 2020
-        </div>
-        <div class="about-text--2">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum perferendis suscipit magni consectetur unde
-          eum ipsam qui incidunt iure temporibus assumenda.
+        <div class="about-container-left">
+          <div class="section-title about">
+            <h2>About Us</h2>
+          </div>
+          <div class="about-text">
+            We are the best vehicule paint since 2020
+          </div>
+          <div class="about-text--2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum perferendis suscipit magni consectetur unde
+            eum ipsam qui incidunt iure temporibus assumenda.
+          </div>
+
+          <ul class="text-u--list">
+            <li class="text-list">
+              <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Best color quality</p>
+            </li>
+            <li class="text-list">
+              <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Best Prices</p>
+            </li>
+            <li class="text-list">
+              <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Official guarantee</p>
+            </li>
+            <li class="text-list">
+              <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Quality and Service</p>
+            </li>
+            <li class="text-list">
+              <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Best materials</p>
+            </li>
+          </ul>
+          <a href="#" class="btn about-btn">More About Us</a>
         </div>
 
-        <ul class="text-u--list">
-          <li class="text-list">
-            <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Best color quality</p>
-          </li>
-          <li class="text-list">
-            <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Best Prices</p>
-          </li>
-          <li class="text-list">
-            <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Official guarantee</p>
-          </li>
-          <li class="text-list">
-            <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Quality and Service</p>
-          </li>
-          <li class="text-list">
-            <p><ion-icon name="checkmark-outline" class="check"></ion-icon> Best materials</p>
-          </li>
-        </ul>
-
-        <a href="#" class="btn about-btn">More About Us</a>
       </div>
       <div class="container-right">
-        <div class="container-img">
-          <img src="images/paint.webp" class="container-img--experience" alt="Experience">
-          <div class="carrousel-container">
-            <div class="carrousel">
-              <div class="carousel-track">
-                <img src="images/range.jpg" class="carrousel-img" alt="Experience">
-                <img src="images/mustang.jpg" class="carrousel-img" alt="Experience">
-                <img src="images/mercedes.jpg" class="carrousel-img" alt="Experience">
+        <div class="about-container-right">
+          <div class="container-img">
+            <img src="images/paint.webp" class="container-img--experience" alt="Experience">
+            <div class="carrousel-container">
+              <div class="carrousel">
+                <div class="carousel-track">
+                  <img src="images/range.jpg" class="carrousel-img" alt="Experience">
+                  <img src="images/mustang.jpg" class="carrousel-img" alt="Experience">
+                  <img src="images/mercedes.jpg" class="carrousel-img" alt="Experience">
+                </div>
               </div>
-            </div>
-            <div class="dots">
-              <button class="dot dot--fill" onclick="goToSlide(0)">&nbsp;</button>
-              <button class="dot" onclick="goToSlide(1)">&nbsp;</button>
-              <button class="dot" onclick="goToSlide(2)">&nbsp;</button>
+              <div class="dots">
+                <button class="dot dot--fill" onclick="goToSlide(0)">&nbsp;</button>
+                <button class="dot" onclick="goToSlide(1)">&nbsp;</button>
+                <button class="dot" onclick="goToSlide(2)">&nbsp;</button>
+              </div>
             </div>
           </div>
         </div>
@@ -197,17 +201,19 @@
       <h2>Our Services</h2>
     </div>
 
-    <p class="service-text font-service--text">WE ARE QUALIFIED & PROFESSIONAL</p>
-    <p class="service-text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum, cum in expedita fugiat labore, nisi,
-      pariatur eos dolorum blanditiis vero temporibus illo debitis accusamus explicabo? Repellat officia at adipisci?
-    </p>
+    <div class="services-container">
+      <p class="service-text font-service--text">WE ARE QUALIFIED & PROFESSIONAL</p>
+      <p class="service-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum, cum in expedita fugiat labore, nisi,
+        pariatur eos dolorum blanditiis vero temporibus illo debitis accusamus explicabo? Repellat officia at adipisci?
+      </p>
 
-    <div class="services-card">
-      <img src="images/range.jpg" class="service-img" alt="Experience">
-      <img src="images/mustang.jpg" class="service-img" alt="Experience">
-      <img src="images/mercedes.jpg" class="service-img" alt="Experience">
-      <a href="#" class="btn service-btn">View all services</a>
+      <div class="services-card">
+        <img src="images/range.jpg" class="service-img" alt="Experience">
+        <img src="images/mustang.jpg" class="service-img" alt="Experience">
+        <img src="images/mercedes.jpg" class="service-img" alt="Experience">
+        <a href="#" class="btn service-btn">View all services</a>
+      </div>
     </div>
 
   </section>
@@ -223,68 +229,70 @@
       <h2>Testimonials</h2>
     </div>
 
-    <p class="testimonial-text font-testimonial--text">Customer reviews</p>
-    <p class="testimonial-text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum, cum in expedita fugiat labore, nisi,
-      pariatur eos dolorum blanditiis vero temporibus illo debitis accusamus explicabo? Repellat officia at adipisci?
-    </p>
+    <div class="testimonials-container">
+      <p class="testimonial-text font-testimonial--text">Customer reviews</p>
+      <p class="testimonial-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum, cum in expedita fugiat labore, nisi,
+        pariatur eos dolorum blanditiis vero temporibus illo debitis accusamus explicabo? Repellat officia at adipisci?
+      </p>
 
-    <div class="testimonial-container">
-      <div class="testimonial-card">
-        <div class="flex-container-row">
-          <img src="images/customer.jpg" class="customer-img" alt="Customer testimonial">
-          <p>Jeannie Fenix</p>
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <div class="flex-container-row">
+            <img src="images/customer.jpg" class="customer-img" alt="Customer testimonial">
+            <p>Jeannie Fenix</p>
+          </div>
+          <div class="customer-review">
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda harum perferendis!</p>
         </div>
-        <div class="customer-review">
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+        <div class="testimonial-card">
+          <div class="flex-container-row">
+            <img src="images/customer.jpg" class="customer-img" alt="Customer testimonial">
+            <p>Jeannie Fenix</p>
+          </div>
+          <div class="customer-review">
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda harum perferendis!</p>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda harum perferendis!</p>
-      </div>
-      <div class="testimonial-card">
-        <div class="flex-container-row">
-          <img src="images/customer.jpg" class="customer-img" alt="Customer testimonial">
-          <p>Jeannie Fenix</p>
+        <div class="testimonial-card">
+          <div class="flex-container-row">
+            <img src="images/customer.jpg" class="customer-img" alt="Customer testimonial">
+            <p>Jeannie Fenix</p>
+          </div>
+          <div class="customer-review">
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda harum perferendis!</p>
         </div>
-        <div class="customer-review">
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+        <div class="testimonial-card">
+          <div class="flex-container-row">
+            <img src="images/customer.jpg" class="customer-img" alt="Customer testimonial">
+            <p>Jeannie Fenix</p>
+          </div>
+          <div class="customer-review">
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+            <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda harum perferendis!</p>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda harum perferendis!</p>
-      </div>
-      <div class="testimonial-card">
-        <div class="flex-container-row">
-          <img src="images/customer.jpg" class="customer-img" alt="Customer testimonial">
-          <p>Jeannie Fenix</p>
-        </div>
-        <div class="customer-review">
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda harum perferendis!</p>
-      </div>
-      <div class="testimonial-card">
-        <div class="flex-container-row">
-          <img src="images/customer.jpg" class="customer-img" alt="Customer testimonial">
-          <p>Jeannie Fenix</p>
-        </div>
-        <div class="customer-review">
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-          <span><ion-icon name="star-sharp" class="customer-star"></ion-icon></span>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda harum perferendis!</p>
       </div>
     </div>
   </section>
@@ -295,46 +303,49 @@
       <h2 class="tittle-price">Pricing plan</h2>
     </div>
 
-    <p class="pricing-text font-pricing--text">Best services price</p>
-    <p class="pricing-text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum, cum in expedita fugiat labore, nisi,
-      pariatur eos dolorum blanditiis vero temporibus illo debitis accusamus explicabo? Repellat officia at adipisci?
-    </p>
+    <div class="pricing-container">
+      <p class="pricing-text font-pricing--text">Best services price</p>
+      <p class="pricing-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum, cum in expedita fugiat labore, nisi,
+        pariatur eos dolorum blanditiis vero temporibus illo debitis accusamus explicabo? Repellat officia at adipisci?
+      </p>
 
-    <div class="pricing-cards">
-      <div class="pricing-card">
-        <h3 class="tittle-card">Car Painting</h3>
-        <p class="price-card">$800</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Best Paint</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Body Repair</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Frame Repair</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Detailling</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Warranty</p>
-        <a href="#" class="btn btn-pricing">Get in touch</a>
-      </div>
-      <div class="pricing-card">
-        <h3 class="tittle-card">Car Painting</h3>
-        <p class="price-card">$800</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Best Paint</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Body Repair</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Frame Repair</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Detailling</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Warranty</p>
-        <a href="#" class="btn btn-pricing">Get in touch</a>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3 class="tittle-card">Car Painting</h3>
+          <p class="price-card">$800</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Best Paint</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Body Repair</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Frame Repair</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Detailling</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Warranty</p>
+          <a href="#" class="btn btn-pricing">Get in touch</a>
+        </div>
+        <div class="pricing-card">
+          <h3 class="tittle-card">Car Painting</h3>
+          <p class="price-card">$800</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Best Paint</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Body Repair</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Frame Repair</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Detailling</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Warranty</p>
+          <a href="#" class="btn btn-pricing">Get in touch</a>
 
-      </div>
-      <div class="pricing-card">
-        <h3>Car Painting</h3>
-        <p class="price-card">$800</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Best Paint</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Body Repair</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Frame Repair</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Detailling</p>
-        <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Warranty</p>
-        <a href="#" class="btn btn-pricing">Get in touch</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Car Painting</h3>
+          <p class="price-card">$800</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Best Paint</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Body Repair</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Frame Repair</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Detailling</p>
+          <p><ion-icon name="checkmark-sharp" class="pricing-check"></ion-icon> Warranty</p>
+          <a href="#" class="btn btn-pricing">Get in touch</a>
 
+        </div>
       </div>
     </div>
+
   </section>
 
   <!-- Contact Us Section -->
@@ -397,54 +408,56 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cumque et autem cupiditate odit iusto</p>
         </div>
       </div>
-      <div class="footer-col">
-        <p class="footer-title">Quick links</p>
-        <ul class="footer-list">
-          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
-              href="#">&nbsp; Hola</a></li>
-          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
-              href="#">&nbsp; Hola</a></li>
-          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
-              href="#">&nbsp; Hola</a></li>
-          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
-              href="#">&nbsp; Hola</a></li>
-          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
-              href="#">&nbsp; Hola</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <p class="footer-title">Support</p>
-        <ul class="footer-list">
-          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
-              href="#">&nbsp;
-              Hola</a></li>
-          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
-              href="#">&nbsp;
-              Hola</a></li>
-          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
-              href="#">&nbsp;
-              Hola</a></li>
-          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
-              href="#">&nbsp;
-              Hola</a></li>
-          <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a class="footer-link footer-text"
-              href="#">&nbsp;
-              Hola</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <p class="footer-title">Information</p>
-        <span class="footer-flex">
-          <ion-icon name="call-outline" class="footer-icon"></ion-icon>
-          <p class="footer-text">&nbsp +506 873751114</p>
-        </span>
-        <span class="footer-flex">
-          <ion-icon name="mail-outline" class="footer-icon"></ion-icon>
-          <p class="footer-text">&nbsp andresdev@proton.me</p>
-        </span>
-        <span class="footer-flex"><ion-icon name="location-outline" class="footer-icon"></ion-icon>
-          <p class="footer-text">&nbsp Alajuela, Costa Rica</p>
-        </span>
+      <div class="footer-grid-container">
+        <div class="footer-col">
+          <p class="footer-title">Quick links</p>
+          <ul class="footer-list">
+            <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a
+                class="footer-link footer-text" href="#">&nbsp; Hola</a></li>
+            <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a
+                class="footer-link footer-text" href="#">&nbsp; Hola</a></li>
+            <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a
+                class="footer-link footer-text" href="#">&nbsp; Hola</a></li>
+            <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a
+                class="footer-link footer-text" href="#">&nbsp; Hola</a></li>
+            <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a
+                class="footer-link footer-text" href="#">&nbsp; Hola</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-title">Support</p>
+          <ul class="footer-list">
+            <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a
+                class="footer-link footer-text" href="#">&nbsp;
+                Hola</a></li>
+            <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a
+                class="footer-link footer-text" href="#">&nbsp;
+                Hola</a></li>
+            <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a
+                class="footer-link footer-text" href="#">&nbsp;
+                Hola</a></li>
+            <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a
+                class="footer-link footer-text" href="#">&nbsp;
+                Hola</a></li>
+            <li><ion-icon name="chevron-forward-outline" class="footer-icon"></ion-icon><a
+                class="footer-link footer-text" href="#">&nbsp;
+                Hola</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-title">Information</p>
+          <span class="footer-flex">
+            <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+            <p class="footer-text">&nbsp +506 873751114</p>
+          </span>
+          <span class="footer-flex">
+            <ion-icon name="mail-outline" class="footer-icon"></ion-icon>
+            <p class="footer-text">&nbsp andresdev@proton.me</p>
+          </span>
+          <span class="footer-flex"><ion-icon name="location-outline" class="footer-icon"></ion-icon>
+            <p class="footer-text">&nbsp Alajuela, Costa Rica</p>
+          </span>
+        </div>
       </div>
     </div>
   </footer>
